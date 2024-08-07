@@ -95,10 +95,14 @@ mv linux-amd64/helm /usr/local/bin/
 
 
 //To remove and uninstall
-
-sudo apt remove kubernetes-cni
  
 sudo apt purge kubectl kubeadm kubelet
+
+
+sudo apt remove kubernetes-cni
+sudo rm -rf /etc/kubernetes
+sudo rm -rf /var/lib/etcd
+sudo rm -rf /var/lib/kubelet
  
 sudo rm -rvf /etc/apt/sources.list.d/kubernetes.list
  
