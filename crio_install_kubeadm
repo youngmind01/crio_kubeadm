@@ -94,7 +94,7 @@ mv linux-amd64/helm /usr/local/bin/
 
 
 
-
+//To remove and uninstall
 
 sudo apt remove kubernetes-cni
  
